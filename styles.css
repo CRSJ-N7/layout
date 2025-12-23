@@ -38,7 +38,6 @@ input:focus, textarea:focus {
   padding: 0 20px;
 }
 
-/* Design section */
 .simple-text {
   color: #727272;
   font-size: 16px;
@@ -75,10 +74,11 @@ input:focus, textarea:focus {
   border: 1.5px solid #34547a;
 }
 
-a {
+a { 
   color: inherit;
   text-decoration: none;
 }
+/* Design section */
 
 .design {
   background-color: #eeeff1;
@@ -93,14 +93,14 @@ a {
   padding-bottom: 146px;
 }
 
-.nav__item--logo {
+.design-nav__logo {
   font-family: "Revalia";
   font-weight: 400;
   font-size: 48px;
   color: #34547a;
 }
 
-.nav__items {
+.design-nav {
   padding-top: 57px;
   display: flex;
   flex-direction: row;
@@ -108,20 +108,20 @@ a {
   align-items: center;
 }
 
-.nav__item {
+.design-nav__item {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.1em;
   cursor: pointer;
   transition: font-size 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
-.nav__item:hover {
+.design-nav__item:hover {
   color: #34547a;
   font-weight: 500;
   transform: scale(1.05);
 }
 
-.nav__item__container {
+.design-nav__menu {
   display: flex;
   justify-content: space-between;
   gap: 42px;
