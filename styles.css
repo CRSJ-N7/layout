@@ -250,26 +250,26 @@ a {
   padding: 102px 0px 102px 0px;
 }
 
-.my-skills__header {
+.my-skills__title {
   font-size: 32px;
   margin-bottom: 25px;
 }
 
-.my-skills__info--skill {
+.my-skills__desc {
   font-size: 16px;
   padding-bottom: 20px;
   font-weight: 400;
   color: #727272;
 }
 
-.my-skills__info--border {
+.my-skills__progress-bar {
   width: 445px;
   border-bottom: 4px solid #c4c4c4;
   position: relative;
   margin-bottom: 30px;
 }
 
-.my-skills__info--border:before {
+.my-skills__progress-bar:before {
   content: "";
   position: absolute;
   border-bottom: 4px solid #34547a;
@@ -291,7 +291,7 @@ a {
     align-items: center;
   }
 
-  .my-skills__info--border {
+  .my-skills__progress-bar {
     width: calc(100% - 20%);
   }
 }
@@ -363,7 +363,7 @@ a {
   max-width: unset;
 }
 
-.work__gallery {
+.gallery__flex {
   display: flex;
   flex-wrap: wrap;
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
@@ -371,12 +371,12 @@ a {
   cursor: pointer;
 }
 
-.work__gallery__container {
+.gallery__card {
   flex: 0 0 25%;
   position: relative;
 }
 
-.work__gallery__item {
+.gallery__image {
   width: 100%;
   height: auto;
   display: block;
@@ -384,7 +384,7 @@ a {
   /* display: block; */
 }
 
-.work__gallery__view {
+.gallery__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -397,7 +397,7 @@ a {
   width: calc(100% - 75%);
 }
 
-.work__gallery__container::after {
+.gallery__card::after {
   content: "";
   position: absolute;
   top: 0;
@@ -410,20 +410,20 @@ a {
   z-index: 1;
 }
 
-.work__gallery__container:hover .work__gallery__item {
+.gallery__card:hover .gallery__image {
   opacity: 1;
 }
 
-.work__gallery__container:hover .work__gallery__view {
+.gallery__card:hover .gallery__overlay {
   opacity: 1;
 }
 
-.work__gallery__container:hover::after {
+.gallery__card:hover::after {
   opacity: 1;
 }
 
 @media (max-width: 1279px) {
-  .work__gallery {
+  .gallery__flex {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -431,10 +431,10 @@ a {
     margin: 28px 0;
   }
 
-  .work__gallery__container {
+  .gallery__card {
     flex: 0 0 50%;
   }
-  .work__gallery__item {
+  .gallery__image {
     display: block;
   }
   #item1 {
