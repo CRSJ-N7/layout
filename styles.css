@@ -170,7 +170,7 @@ a {
   .design__logo {
     max-height: 195px;
   }
-  .nav__item__container {
+  .design-nav__menu {
     display: none;
     gap: 0;
   }
@@ -465,11 +465,11 @@ a {
 
 /* Contact form */
 
-.contact-form {
+.contact {
   background-color: #eeeff1;
 }
 
-.contact-form__wrapper {
+.contact__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -477,11 +477,11 @@ a {
   padding-top: 50px;
 }
 
-.contact-form__description {
+.contact__description {
   margin-bottom: 65px;
 }
 
-.contact-form__form {
+.contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -489,23 +489,23 @@ a {
   padding-bottom: 100px;
 }
 
-.form-group__initials {
+.contact-form__initials {
   display: flex;
   gap: 30px;
 }
 
-.form-group {
+.contact-form {
   width: 100%;
 }
 
-.form-group__name {
+.contact-form__name {
   width: 255px;
   height: 50px;
   border: none;
   padding: 15px;
 }
 
-.form-group__message {
+.contact-form__message {
   width: 100%;
   max-width: 540px;
   min-height: 175px;
@@ -515,28 +515,28 @@ a {
   resize: none;
 }
 
-.form-group__name::placeholder,
-.form-group__message::placeholder {
+.contact-form__name::placeholder,
+.contact-form__message::placeholder {
   font-size: 14px;
   color: #5f5d5d;
   line-height: 1.64em;
 }
 
-.contact-form__form > button {
+.contact-form > button {
   margin-top: 50px;
 }
 
 @media (max-width: 1279px) {
-  .contact-form__form {
+  .contact-form {
     width: 100%;
   }
-  .form-group__initials {
+  .contact-form__initials {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 20px;
   }
-  .form-group__name {
+  .contact-form__name {
     width: 100%;
   }
 }
@@ -557,12 +557,12 @@ a {
   gap: 20px;
 }
 
-.footer_socials {
+.footer__socials {
   display: flex;
   gap: 20px;
 }
 
-.footer_socials__vk {
+.socials__icon {
   width: 43px;
   height: 40px;
   cursor: pointer;
