@@ -206,19 +206,19 @@ a {
   background-color: #34547a;
 }
 
-.about-me__project__items {
+.project {
   display: flex;
   justify-content: center;
   padding: 100px 0px 100px 0px;
   gap: 49px;
 }
 
-.project__items__container {
+.project__items {
   display: flex;
   gap: 20px;
 }
 
-.items__desc {
+.project__desc {
   font-size: 16px;
   font-weight: 400;
   color: white;
@@ -230,11 +230,11 @@ a {
 }
 
 @media (max-width: 1279px) {
-  .about-me__project__items {
+  .project {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
   }
-  .project__items__container {
+  .project__items {
     align-items: center;
     justify-content: center;
     margin: 0 -15px;
